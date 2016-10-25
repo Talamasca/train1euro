@@ -1,0 +1,25 @@
+{
+  "name": "train1e",
+  "version": "1.0.0",
+  "description": "check when date is open to buy tickets",
+  "main": "train1e.js",
+  "dependencies": {
+    "nodemailer": "^2.6.4",
+    "node-mailjet": "^3.0.5",
+    "x-ray": "^2.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node train1e.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Talamasca/train1euro.git"
+  },
+  "author": "Reginald Costa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Talamasca/train1euro/issues"
+  },
+  "homepage": "https://github.com/Talamasca/train1euro#readme"
+}
