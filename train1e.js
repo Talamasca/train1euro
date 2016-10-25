@@ -13,13 +13,12 @@ var x = new Xray({
 
 
 var goMailJet = function(value) {
-  console.log("je passe la " + value);
   var sendEmail = Mailjet.post('send');
   var emailData = {
       'FromEmail': config.mailjet.fromEmail,
       'FromName': config.mailjet.fromName,
       'Subject': "Train à 1€ ouverture de nouvelles dates",
-      "Html-part":"<h3>Salut </h3><br />Train à 1€ a ouvert de nouvelles dates : " + value + "<br>",
+      "Html-part":"<h3>Salut </h3><br />Train à 1€ a ouvert de nouvelles dates : " + value + "<br>  ",
       //'Text-part': 'Hello NodeJs !',
       'Recipients': [{'Email': config.mailjet.toEmail}],
   }
@@ -34,12 +33,6 @@ var goMailJet = function(value) {
   	});*/
 };
 
-/*
-sendEmail
-    .request(emailData)
-    .then("handlePostResponse")
-    .catch("handleError");
-*/
 
 function findDate(value) {
   var regExp = /maxDateDepart(.*([0-9]{2}\/[0-9]{2}\/[0-9]{4}))/g;
